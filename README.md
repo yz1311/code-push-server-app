@@ -3,7 +3,7 @@
 CodePush Server App是[CodePush Server](https://github.com/lisong/code-push-server)的一个app客户端。
 基于CodePush Server提供的api接口，提供比cli更加友好和方便的管理方式。
 
-#### 特性
+### 特性
 基本上Server端目前暴露出来的api接口,基本上能做的都做了
 
 > 用户管理
@@ -25,12 +25,23 @@ CodePush Server App是[CodePush Server](https://github.com/lisong/code-push-serv
    * 修改已发布的package信息
    * 回滚已发布的package
 
-#### 下载
+### 下载
 
-* android:
+* android:  
+
+[](http://t.cn/AiD23gE9)
 
 ![](https://tva1.sinaimg.cn/large/006tNbRwgy1g9u0oztop1j308c08cdg4.jpg)
 
 * iOS:
 
 无Apple账号，可以直接clone项目运行
+
+
+### 截图
+
+![](./screenshots/login.png) 
+![](./screenshots/app_list.png)
+![](./screenshots/app_detail_1.png)
+![](./screenshots/app_detail_2.png)
+![](./screenshots/app_deployment.png)
