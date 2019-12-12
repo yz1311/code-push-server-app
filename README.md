@@ -40,8 +40,8 @@ CodePush Server App是[CodePush Server](https://github.com/lisong/code-push-serv
 
 ### 截图
 
-![](./screenshots/login.png) 
-![](./screenshots/app_list.png)
-![](./screenshots/app_detail_1.png)
-![](./screenshots/app_detail_2.png)
-![](./screenshots/app_deployment.png)
+![](https://tva1.sinaimg.cn/large/006tNbRwgy1g9u3rfkuc0j30c00lxgmj.jpg) 
+![](https://tva1.sinaimg.cn/large/006tNbRwgy1g9u3roeao1j30c00lx76d.jpg)
+![](https://tva1.sinaimg.cn/large/006tNbRwgy1g9u3rua3iwj30c00lxq4g.jpg)
+![](https://tva1.sinaimg.cn/large/006tNbRwgy1g9u3rzb0buj30c00lxjtp.jpg)
+![](https://tva1.sinaimg.cn/large/006tNbRwgy1g9u3s3h5asj30c00lxgne.jpg)
