@@ -1,0 +1,5 @@
+*.pbxproj -text
+src/common/constants.ts merge=ours
+android/app/src/build.gradle merge=ours
+android/app/src/main/res/* merge=ours
+ios/code-push-server-app/Info.plist merge=ours
