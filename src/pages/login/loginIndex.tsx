@@ -84,6 +84,9 @@ export default class LoginIndex extends PureComponent<IProps,IState>{
     }
 
     componentWillUnmount(): void {
+        this.setState = (state, callback)=>{
+            return;
+        };
         this.fillUserIdListener&&this.fillUserIdListener.remove();
     }
 

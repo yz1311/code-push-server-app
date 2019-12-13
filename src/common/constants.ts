@@ -91,13 +91,15 @@ global.gScreen = {
 };
 
 (()=>{
-    //API19版本以上才支持沉浸式状态栏
-    if(Platform.OS==='android'&&Platform.Version>=19) {
+    if (Platform.OS === 'android') {
+        //API19版本以上才支持沉浸式状态栏
+        if(Platform.Version >= 19) {
 
-    } else {
-        gScreen.isTranslucent = false;
+        } else {
+            gScreen.isTranslucent = false;
+        }
     }
-})()
+})();
 
 global.fontSizeScaler = PixelRatio.get()/PixelRatio.getFontScale();
 

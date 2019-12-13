@@ -3,12 +3,9 @@ import {
     View,
     StyleSheet,
     Dimensions,
-    Text,
-    Image,
-    TouchableOpacity,
-    ImageSourcePropType,
-    ScrollView,
-    PixelRatio, TextInput, StatusBar,
+    AppState,
+    StatusBar,
+    Platform,
 } from 'react-native';
 import ScrollableTabView from '@yz1311/react-native-scrollable-tab-view';
 import {Theme} from '@yz1311/teaset';
@@ -56,6 +53,25 @@ export default class HomeIndex extends Component<IProps, IState> {
         return {
             header: null,
         };
+    };
+
+    componentDidMount(): void {
+        AppState.addEventListener('change',this._handleAppStateChange);
+    }
+
+    componentWillUnmount(): void {
+        AppState.removeEventListener('change', this._handleAppStateChange);
+    }
+
+    _handleAppStateChange = async (appState) => {
+        if (appState === 'active') {
+            //https://github.com/facebook/react-native/issues/23058
+            //在android下会有上面的bug，状态栏在返回退出或者长时间在后台，进去时会重新显示出来
+            if(Platform.OS==='android' && gScreen.isTranslucent) {
+                StatusBar.setTranslucent(true);
+                StatusBar.setBackgroundColor('transparent');
+            }
+        }
     };
 
     _onChangeTab = obj => {
