@@ -1,4 +1,4 @@
-import Model from "../../dva";
+import Model from 'dva-core';
 
 
 export default {

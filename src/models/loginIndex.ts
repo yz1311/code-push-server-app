@@ -1,4 +1,3 @@
-import Model from "../../dva";
 import {DrawerActions} from "react-navigation";
 import ToastUtils from "../utils/toastUtils";
 
@@ -7,6 +6,7 @@ import {Action} from "redux-actions";
 import _buffer from 'buffer';
 import {Api} from "../api";
 import {userInfoModel, userLoginRequest} from "../api/login";
+import Model from 'dva-core';
 
 export interface IState {
     isLogin: boolean,

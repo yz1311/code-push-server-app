@@ -1,5 +1,5 @@
-import Model from "../../dva";
 import {StatusBarStyle} from "react-native";
+import Model from 'dva-core';
 
 export interface IState {
     barStyle: StatusBarStyle,
