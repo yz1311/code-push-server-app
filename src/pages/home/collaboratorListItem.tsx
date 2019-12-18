@@ -65,7 +65,7 @@ function CollaboratorListItem (props:IProps) {
     let canModify = props.canModify;
     return (
         <CardView
-            style={{marginHorizontal:gScreen.width*0.02}}
+            style={{marginHorizontal:gScreen.width*0.02,backgroundColor:'white'}}
             cardElevation={2}
             cardMaxElevation={2}
             cornerRadius={5}>

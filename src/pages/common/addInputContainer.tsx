@@ -27,10 +27,10 @@ const AddInputContainer:FC<IProps> = ({placeholder,defaultValue},ref)=>{
     );
 }
 
-AddInputContainer.defaultProps = {
-    placeholder: '请输入'
-};
-
 const ForwardAddInputContainer = forwardRef(AddInputContainer);
+
+ForwardAddInputContainer.defaultProps = {
+  placeholder: '请输入'
+};
 
 export default ForwardAddInputContainer;
