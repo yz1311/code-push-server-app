@@ -23,7 +23,9 @@ import AccessKeyIndex from "./accessKey/accessKeyIndex";
 import DeploymentTypeList from "./deployment/deploymentTypeList";
 import ProfileSetting from "./profile/profileSetting";
 import ProfileAbout from './profile/profileAbout';
-import Scanner from './home/scanner';
+import ScannerDemo from './demo/scannerDemo';
+import DemoIndex from './demo/demoIndex';
+import WheelPickerDemo from './demo/wheelPickerDemo';
 
 
 let _navigation;
@@ -40,9 +42,11 @@ const AppNavigation = createStackNavigator(
         ModifyName:{screen:withMappedNavigationProps(ModifyName)},
         AccessKeyIndex:{screen:withMappedNavigationProps(AccessKeyIndex)},
         DeploymentTypeList:{screen:withMappedNavigationProps(DeploymentTypeList)},
-        Scanner:{screen:withMappedNavigationProps(Scanner)},
+        ScannerDemo:{screen:withMappedNavigationProps(ScannerDemo)},
+        WheelPickerDemo:{screen:withMappedNavigationProps(WheelPickerDemo)},
         ProfileSetting:{screen:withMappedNavigationProps(ProfileSetting),navigationOptions: {headerTitle: '设置'}},
         ProfileAbout:{screen:withMappedNavigationProps(ProfileAbout),navigationOptions: {headerTitle: '关于'}},
+        DemoIndex:{screen:withMappedNavigationProps(DemoIndex)},
     },
     {
         initialRouteName: 'LoginIndex',

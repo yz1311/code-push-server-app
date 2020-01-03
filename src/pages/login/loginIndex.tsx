@@ -124,7 +124,19 @@ export default class LoginIndex extends PureComponent<IProps,IState>{
     render () {
         return (
             <View style={[Styles.container,{backgroundColor: gColors.bgColorF}]}>
-                <NavigationBar style={{position:'relative'}} title={'登录'} leftView={null}/>
+                <NavigationBar style={{position:'relative'}} title={'登录'}
+                               leftView={null}
+                               rightView={(
+                                 <TouchableOpacity
+                                   activeOpacity={0.9}
+                                   onPress={()=>{
+                                       NavigationHelper.push('DemoIndex');
+                                   }}
+                                   style={{flex:1,justifyContent:'center'}}>
+                                     <Text style={{color:gColors.bgColorF,fontSize:gFont.size16}}>组件演示</Text>
+                                 </TouchableOpacity>
+                               )}
+                />
                 <KeyboardAwareScrollView style={[Styles.flexColumn,{marginTop:gScreen.width*0.3,paddingHorizontal:gScreen.width*0.1}]}>
                     <View style={{flexDirection:'row',alignItems:"center"}}>
                         <FontAwesome5 name={'user'} size={22} color={'#89D4FC'}/>

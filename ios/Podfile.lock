@@ -259,6 +259,8 @@ PODS:
     - React
   - RNSVG (9.13.6):
     - React
+  - RNSyanImagePicker (0.4.5):
+    - React
   - RNVectorIcons (6.6.0):
     - React
   - SSZipArchive (2.2.2)
@@ -310,6 +312,7 @@ DEPENDENCIES:
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNSVG (from `../node_modules/react-native-svg`)
+  - RNSyanImagePicker (from `../node_modules/react-native-syan-image-picker/ios`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -405,6 +408,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNSVG:
     :path: "../node_modules/react-native-svg"
+  RNSyanImagePicker:
+    :path: "../node_modules/react-native-syan-image-picker/ios"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
   Yoga:
@@ -456,6 +461,7 @@ SPEC CHECKSUMS:
   RNPermissions: 923c1506d0bde387fbcfc18a8f87945806d03c19
   RNReanimated: b2ab0b693dddd2339bd2f300e770f6302d2e960c
   RNSVG: 8ba35cbeb385a52fd960fd28db9d7d18b4c2974f
+  RNSyanImagePicker: db735a80974cbc742d777a570b889d160624fcfb
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b

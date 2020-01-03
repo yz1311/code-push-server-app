@@ -1274,10 +1274,12 @@
   resolved "https://registry.npm.taobao.org/@yz1311/react-native-smart-barcode/download/@yz1311/react-native-smart-barcode-1.1.0-beta7.tgz#8073ca1c394ab88ec22a18de0f912e41894cca5c"
   integrity sha1-gHPKHDlKuI7CKhjeD5EuQYlMylw=
 
-"@yz1311/react-native-wheel-picker@^0.1.2-beta8":
-  version "0.1.2"
-  resolved "https://registry.npm.taobao.org/@yz1311/react-native-wheel-picker/download/@yz1311/react-native-wheel-picker-0.1.2.tgz#c3aae0e7f0a1ef5141c2b995426d915ed76137ba"
-  integrity sha1-w6rg5/Ch71FBwrmVQm2RXtdhN7o=
+"@yz1311/react-native-wheel-picker@0.2.0-beta15":
+  version "0.2.0-beta15"
+  resolved "https://registry.npmjs.org/@yz1311/react-native-wheel-picker/-/react-native-wheel-picker-0.2.0-beta15.tgz#7de1645e8d61a45d7b25caf99af9a3128da88202"
+  integrity sha512-UDB7A9haiadmCcXqjB3BGFyPek1EyrUfHSr7elaiPJF/6P4Pu72+R7DNAigsABX1iFOcgiz/u0/XNIvAwGlmog==
+  dependencies:
+    prop-types "^15.5.10"
 
 "@yz1311/teaset-code-push@^0.2.2":
   version "0.2.2"
@@ -6408,10 +6410,10 @@ react-native-svg@^9.13.6:
     css-select "^2.0.2"
     css-tree "^1.0.0-alpha.37"
 
-react-native-syan-image-picker@^0.4.5:
-  version "0.4.5"
-  resolved "https://registry.npm.taobao.org/react-native-syan-image-picker/download/react-native-syan-image-picker-0.4.5.tgz#bae587083748f0ab701e1961858c268c415a89df"
-  integrity sha1-uuWHCDdI8KtwHhlhhYwmjEFaid8=
+react-native-syan-image-picker@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.npmjs.org/react-native-syan-image-picker/-/react-native-syan-image-picker-0.4.6.tgz#5916a16ca5f912b358c14c27b11d86f4b1236cf6"
+  integrity sha512-aDenqFROt62x5W+CNP3F1o7kayrInuWonMGMLDC8TAr3elwwYramtdgXF4TUzKs23TMp+2NY9JDxtKwTHflirg==
 
 react-native-tab-view@^1.2.0, react-native-tab-view@^1.4.1:
   version "1.4.1"
