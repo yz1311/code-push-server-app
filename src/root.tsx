@@ -1,3 +1,4 @@
+console.log('1222')
 import * as YZConstants from './common/constants';
 import * as YZStorage from './utils/globalStorage';
 /* eslint-enable */
@@ -33,7 +34,6 @@ Theme.set({
 });
 //必须要延后加载，否则Theme设置无效
 const App = require('./pages/app').default;
-const AppNav = require('./pages/appNav').default;
 
 const dvaApp = create();
 dvaApp.use(useImmer());
@@ -41,10 +41,6 @@ models.forEach(x => {
     dvaApp.model(x);
 });
 dvaApp.start();
-
-const AppWidthNavigator = createAppContainer(AppNav);
-
-const AppWitheNavigationState = (<App  AppNavigator={AppWidthNavigator}/>);
 
 const store = dvaApp._store;
 
@@ -121,7 +117,7 @@ class Root extends Component<any,any> {
         return (
             <View style={{flex: 1}}>
                 <Provider store={store}>
-                    {AppWitheNavigationState}
+                    <App  AppNavigator={createAppContainer(require('./pages/appNav').default)}/>
                 </Provider>
             </View>
         );

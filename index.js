@@ -5,7 +5,6 @@
 import {AppRegistry, Platform, YellowBox} from 'react-native';
 import Root from './src/root';
 import {name as appName} from './app.json';
-
 if(Platform.OS ==='android')
 {
     global.__ANDROID__ = true;

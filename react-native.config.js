@@ -6,5 +6,10 @@ module.exports = {
                 android: null, // disable Android platform, other platforms will still autolink if provided
             },
         },
+        '@yz1311/react-native-smart-barcode': {
+            platforms: {
+                ios: null
+            }
+        }
     },
 };

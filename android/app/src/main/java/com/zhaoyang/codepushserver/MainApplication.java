@@ -1,6 +1,7 @@
 package com.zhaoyang.codepushserver;
 
 import android.app.Application;
+import androidx.multidex.MultiDex;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
@@ -72,5 +73,12 @@ public class MainApplication extends Application implements ReactApplication {
         e.printStackTrace();
       }
     }
+  }
+
+  @Override
+  protected void attachBaseContext(Context base) {
+      super.attachBaseContext(base);
+      // 分包处理
+      MultiDex.install(this);
   }
 }

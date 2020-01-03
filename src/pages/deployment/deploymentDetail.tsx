@@ -161,7 +161,7 @@ export default class DeploymentDetail extends PureComponent<IProps,IState>{
                     />
                     <ListRow
                         title={'大小'}
-                        detail={item.size}
+                        detail={(item.size / 1024 / 1024).toFixed(1) + 'MB'}
                     />
                     <ListRow
                         title={'发布时间'}

@@ -23,6 +23,7 @@ import AccessKeyIndex from "./accessKey/accessKeyIndex";
 import DeploymentTypeList from "./deployment/deploymentTypeList";
 import ProfileSetting from "./profile/profileSetting";
 import ProfileAbout from './profile/profileAbout';
+import Scanner from './home/scanner';
 
 
 let _navigation;
@@ -39,6 +40,7 @@ const AppNavigation = createStackNavigator(
         ModifyName:{screen:withMappedNavigationProps(ModifyName)},
         AccessKeyIndex:{screen:withMappedNavigationProps(AccessKeyIndex)},
         DeploymentTypeList:{screen:withMappedNavigationProps(DeploymentTypeList)},
+        Scanner:{screen:withMappedNavigationProps(Scanner)},
         ProfileSetting:{screen:withMappedNavigationProps(ProfileSetting),navigationOptions: {headerTitle: '设置'}},
         ProfileAbout:{screen:withMappedNavigationProps(ProfileAbout),navigationOptions: {headerTitle: '关于'}},
     },

@@ -1,5 +1,14 @@
 import React,{PureComponent} from "react";
-import {DeviceEventEmitter, EmitterSubscription, FlatList, RefreshControl, StyleSheet, View} from "react-native";
+import {
+    DeviceEventEmitter,
+    EmitterSubscription,
+    FlatList,
+    RefreshControl,
+    StyleSheet,
+    TouchableOpacity,
+    View,
+    Text
+} from 'react-native';
 import {Styles} from "../../common/styles";
 import {NavigationBar, Theme} from "@yz1311/teaset";
 import {Api} from "../../api";
@@ -135,7 +144,15 @@ export default class AppIndex extends PureComponent<IProps,IState>{
         const {loadDataResult, dataList} = this.state;
         return (
             <View style={[Styles.container]}>
-                <NavigationBar style={{position:'relative'}} title={'App列表'} leftView={null}/>
+                <NavigationBar style={{position:'relative'}} title={'App列表'} leftView={null} rightView={
+                    <TouchableOpacity
+                        onPress={()=>{
+                            NavigationHelper.push('Scanner');
+                        }}
+                        >
+                        <Text style={{color:gColors.bgColorF,fontSize:gFont.size16}}>扫描</Text>
+                    </TouchableOpacity>
+                }/>
                 <ScrollableTabView
                     style={{}}
                     renderTabBar={() =>
