@@ -26,6 +26,7 @@ import ProfileAbout from './profile/profileAbout';
 import ScannerDemo from './demo/scannerDemo';
 import DemoIndex from './demo/demoIndex';
 import WheelPickerDemo from './demo/wheelPickerDemo';
+import ClearCacheDemo from './demo/clearCacheDemo';
 
 
 let _navigation;
@@ -47,6 +48,7 @@ const AppNavigation = createStackNavigator(
         ProfileSetting:{screen:withMappedNavigationProps(ProfileSetting),navigationOptions: {headerTitle: '设置'}},
         ProfileAbout:{screen:withMappedNavigationProps(ProfileAbout),navigationOptions: {headerTitle: '关于'}},
         DemoIndex:{screen:withMappedNavigationProps(DemoIndex)},
+        ClearCacheDemo:{screen:withMappedNavigationProps(ClearCacheDemo)},
     },
     {
         initialRouteName: 'LoginIndex',

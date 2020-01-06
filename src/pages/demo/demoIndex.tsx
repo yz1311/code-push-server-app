@@ -49,6 +49,12 @@ const DemoIndex:FC<IProps> = ()=>{
       />
       <Text style={[styles.sectionTitle,{}]}>功能组件</Text>
       <ListRow
+        title={'缓存'}
+        onPress={()=>{
+          NavigationHelper.push('ClearCacheDemo');
+        }}
+      />
+      <ListRow
         title={'扫二维码'}
         onPress={checkCameraPermission}
         />
