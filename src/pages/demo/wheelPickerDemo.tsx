@@ -16,6 +16,13 @@ const SIGNLE_WHEEL_DATA_2 = '甲、乙、丙、丁、戊、己、庚、辛、壬
 
 const SIGNLE_WHEEL_DATA_3 = '子、丑、寅、卯、辰、巳、午、未、申、酋、戊、亥'.split('、');
 
+const CASCADE_WHEEL_DATA = {
+  '刘备': ['皇叔', '蜀国', '皇帝'],
+  '关羽': ['关公', '长髯', '红脸'],
+  '张飞': ['黑脸', '翼德', '燕人'],
+  '赵云': ['常山', '子龙']
+};
+
 const WheelPickerDemo:FC<IProps> = ()=>{
 
   const picker1 = ()=>{
@@ -218,6 +225,50 @@ const WheelPickerDemo:FC<IProps> = ()=>{
     let overlayKey = Overlay.show(overlayView);
   }
 
+  const picker10 = ()=>{
+    let overlayView = (
+      <Overlay.PullView side='bottom' modal={false}>
+        <View style={{backgroundColor: '#fff', height: 300}}>
+          <CommonPicker
+            pickerTitle={'多选-级联'}
+            pickerData={CASCADE_WHEEL_DATA}
+            selectedValue={[]}
+            onPickerCancel={()=>{
+              Overlay.hide(overlayKey);
+            }}
+            onPickerConfirm={(value)=>{
+              Overlay.hide(overlayKey);
+              Alert.alert('','已选择:\n'+value.join(','),[{text: '知道了'}])
+            }}
+          />
+        </View>
+      </Overlay.PullView>
+    );
+    let overlayKey = Overlay.show(overlayView);
+  }
+
+  const picker11 = ()=>{
+    let overlayView = (
+      <Overlay.PullView side='bottom' modal={false}>
+        <View style={{backgroundColor: '#fff', height: 300}}>
+          <CommonPicker
+            pickerTitle={'多选-级联'}
+            pickerData={CASCADE_WHEEL_DATA}
+            selectedValue={['赵云','子龙']}
+            onPickerCancel={()=>{
+              Overlay.hide(overlayKey);
+            }}
+            onPickerConfirm={(value)=>{
+              Overlay.hide(overlayKey);
+              Alert.alert('','已选择:\n'+value.join(','),[{text: '知道了'}])
+            }}
+          />
+        </View>
+      </Overlay.PullView>
+    );
+    let overlayKey = Overlay.show(overlayView);
+  }
+
   return (
     <ScrollView style={[Styles.container]}>
       <ListRow
@@ -242,6 +293,18 @@ const WheelPickerDemo:FC<IProps> = ()=>{
         title={'多选-无关联(带默认值)'}
         onPress={()=>{
           picker4();
+        }}
+      />
+      <ListRow
+        title={'多选-级联'}
+        onPress={()=>{
+          picker10();
+        }}
+      />
+      <ListRow
+        title={'多选-级联(带默认值)'}
+        onPress={()=>{
+          picker11();
         }}
       />
       <ListRow
