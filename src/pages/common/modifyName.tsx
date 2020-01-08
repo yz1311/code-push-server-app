@@ -47,7 +47,7 @@ function ModifyName(props:IProps) {
 
 ModifyName.navigationOptions = ({navigation})=>{
     return {
-        header: null
+        headerShown: false
     }
 }
 

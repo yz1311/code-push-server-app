@@ -33,7 +33,7 @@ export interface IState {
 export default class AppIndex extends PureComponent<IProps,IState>{
     static navigationOptions = ()=>{
         return {
-            header: null
+            headerShown: false
         };
     }
 

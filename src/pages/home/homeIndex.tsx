@@ -51,7 +51,7 @@ export default class HomeIndex extends Component<IProps, IState> {
 
     static navigationOptions = () => {
         return {
-            header: null,
+            headerShown: false
         };
     };
 

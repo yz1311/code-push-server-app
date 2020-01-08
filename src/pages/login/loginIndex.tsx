@@ -26,7 +26,7 @@ export interface IState {
 export default class LoginIndex extends PureComponent<IProps,IState>{
     static navigationOptions = ()=>{
         return {
-            header: null
+            headerShown: false
         };
     }
 

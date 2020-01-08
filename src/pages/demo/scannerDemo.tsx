@@ -18,7 +18,7 @@ export default class ScannerDemo extends PureComponent<IProps,IState>{
 
   static navigationOptions = ()=>{
     return {
-      header: null
+      headerShown: false
     };
   }
 

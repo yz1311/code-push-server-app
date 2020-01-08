@@ -35,7 +35,7 @@ export interface IState {
 export default class DeploymentList extends PureComponent<IProps,IState>{
     static navigationOptions = ()=>{
         return {
-            header: null
+            headerShown: false
         };
     }
 
